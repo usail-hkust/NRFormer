@@ -1,0 +1,32 @@
+data:
+  dataset: Radiation
+  num_sensors: 3841
+  batch_size: 4
+  distance: 10
+
+  train_prop: 0.6
+  valid_prop: 0.2
+
+  day_size: 0
+  month_size: 31
+  year_size: 365
+
+
+trainer:
+  early_stop: True
+  early_stop_steps: 20
+  print_frequency: 1
+
+  weight_lr: 0.001
+  weight_lr_decay_milestones: [50,60,70,80]
+  weight_lr_decay_ratio: 0.01
+  weight_decay: 0.0001
+  weight_clip_gradient: 5
+
+model:
+  name: Radiation_AutoTF
+  adj_type: doubletransition
+  end_channels: 512
+  hidden_channels: 32
+
+
