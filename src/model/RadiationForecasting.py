@@ -247,8 +247,6 @@ class NRFormer(nn.Module):
         x_spatial = self.LightTransfer(x_temporal, temporal_mlp, self.mask)
 
         # 7. end fusion
-        # TODO
-        # select the residual embedding
         x = torch.cat([x_temporal]+[x_spatial], dim=-1)
         x = self.end_conv1(x)
         x = F.relu(x)
