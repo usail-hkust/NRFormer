@@ -15,7 +15,7 @@
 | **[3 Usage](#usage)**
 | **[4 Code structure](#code-structure)** 
 | **[5 Datasets](#dataset)**
-| **[Interactive Web-based Forecasting Platform](https://anonymous-www25.github.io/)** |
+| **[Interactive Web-based Forecasting Platform](https://nrformer.github.io/)** |
 
 </p>
 
